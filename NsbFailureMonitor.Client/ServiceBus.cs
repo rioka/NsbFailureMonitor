@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
 using NServiceBus;
 
-namespace NsbFailuerMonitor.Client
+namespace NsbFailureMonitor.Client
 {
   public static class ServiceBus
   {

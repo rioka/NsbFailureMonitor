@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("NsbFailuerMonitor.Server")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("NsbFailureMonitor.Client")]
+[assembly: AssemblyDescription("Sample Nsb client")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("NsbFailuerMonitor.Server")]
-[assembly: AssemblyCopyright("Copyright ©  2015")]
+[assembly: AssemblyProduct("NsbFailureMonitor.Client")]
+[assembly: AssemblyCopyright("Copyright © Bitdeas 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("c941f0f8-b0a1-4467-b269-c6b4aebcc0e5")]
+[assembly: Guid("828bfba3-60d4-47cf-9815-ef3c1920ab5a")]
 
 // Version information for an assembly consists of the following four values:
 //

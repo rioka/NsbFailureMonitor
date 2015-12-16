@@ -2,7 +2,7 @@
 using System.Reflection;
 using NServiceBus;
 
-namespace NsbFailuerMonitor.Server
+namespace NsbFailureMonitor.Server
 {
   public class EndpointConfig : IConfigureThisEndpoint
   {

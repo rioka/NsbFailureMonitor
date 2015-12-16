@@ -2,7 +2,7 @@
 using NServiceBus;
 using NsbFailureMonitor.Messages.Commands;
 
-namespace NsbFailuerMonitor.Server
+namespace NsbFailureMonitor.Server
 {
   public class Handler : IHandleMessages<CreateOrder>
   {

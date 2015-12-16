@@ -5,16 +5,16 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NsbFailureMonitor.Monitor", "NsbFailureMonitor.Monitor\NsbFailureMonitor.Monitor.csproj", "{130F550B-9690-4BAE-B1B2-F755B66B293B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NsbFailuerMonitor.Client", "NsbFailuerMonitor.Client\NsbFailuerMonitor.Client.csproj", "{2AE9AB8A-945B-4F2E-A8AE-44E2A88DC9ED}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NsbFailuerMonitor.Server", "NsbFailuerMonitor.Server\NsbFailuerMonitor.Server.csproj", "{3D247670-59B1-4614-BD98-3F066A4130C7}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NsbFailureMonitor.Messages", "NsbFailureMonitor.Messages\NsbFailureMonitor.Messages.csproj", "{D90C099F-27A3-4F50-9457-371DA593085A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{4A8EA95C-2E37-452A-8B02-AA4AA48A1BBF}"
 	ProjectSection(SolutionItems) = preProject
 		Notes.txt = Notes.txt
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NsbFailureMonitor.Client", "NsbFailureMonitor.Client\NsbFailureMonitor.Client.csproj", "{2AE9AB8A-945B-4F2E-A8AE-44E2A88DC9ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NsbFailureMonitor.Server", "NsbFailureMonitor.Server\NsbFailureMonitor.Server.csproj", "{3D247670-59B1-4614-BD98-3F066A4130C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +26,10 @@ Global
 		{130F550B-9690-4BAE-B1B2-F755B66B293B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{130F550B-9690-4BAE-B1B2-F755B66B293B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{130F550B-9690-4BAE-B1B2-F755B66B293B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D90C099F-27A3-4F50-9457-371DA593085A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D90C099F-27A3-4F50-9457-371DA593085A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D90C099F-27A3-4F50-9457-371DA593085A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D90C099F-27A3-4F50-9457-371DA593085A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2AE9AB8A-945B-4F2E-A8AE-44E2A88DC9ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2AE9AB8A-945B-4F2E-A8AE-44E2A88DC9ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AE9AB8A-945B-4F2E-A8AE-44E2A88DC9ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -34,10 +38,6 @@ Global
 		{3D247670-59B1-4614-BD98-3F066A4130C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D247670-59B1-4614-BD98-3F066A4130C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D247670-59B1-4614-BD98-3F066A4130C7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D90C099F-27A3-4F50-9457-371DA593085A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D90C099F-27A3-4F50-9457-371DA593085A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D90C099F-27A3-4F50-9457-371DA593085A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D90C099F-27A3-4F50-9457-371DA593085A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

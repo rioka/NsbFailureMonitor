@@ -2,9 +2,8 @@
 using System.Configuration;
 using System.Linq;
 using NsbFailureMonitor.Messages.Commands;
-using NServiceBus;
 
-namespace NsbFailuerMonitor.Client
+namespace NsbFailureMonitor.Client
 {
   internal class Program
   {
