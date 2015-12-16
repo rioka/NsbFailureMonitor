@@ -4,7 +4,9 @@ using ServiceControl.Contracts;
 
 namespace NsbFailureMonitor.Monitor
 {
-  public class Handler : IHandleMessages<MessageFailed>
+  public class Handler : IHandleMessages<MessageFailed>,
+                         IHandleMessages<HeartbeatStopped>,
+                         IHandleMessages<HeartbeatRestored>
   {
     public void Handle(MessageFailed message)
     {
@@ -14,6 +16,16 @@ namespace NsbFailureMonitor.Monitor
       Console.WriteLine("\tProcessing endpoint {0}", message.ProcessingEndpoint.Name);
       Console.WriteLine("\tSending endpoint {0}", message.SendingEndpoint.Name);
       Console.WriteLine("\tSending endpoint {0}", message.Status);
+    }
+
+    public void Handle(HeartbeatStopped message)
+    {
+      Console.WriteLine("Endpoint '{0}' on host '{1}' seems not to be working at {2}", message.EndpointName, message.Host, message.DetectedAt.ToLocalTime());
+    }
+
+    public void Handle(HeartbeatRestored message)
+    {
+      Console.WriteLine("Endpoint '{0}' restored at {1} on host '{2}'", message.EndpointName, message.RestoredAt, message.Host);
     }
   }
 }

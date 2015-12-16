@@ -1,0 +1,28 @@
+This solution contains 4 projects
+- NsbFailureMonitor.Messages
+  Contains the messages
+- NsbFailureMonitor.Server
+  Defines the endpoint which processed command CreateOrder
+  For thisendpoint, Heartbeat is enabled, so that we can get signalled when the service is alive or not
+- NsbFailureMonitor.Client
+  Client application which sends CreateOrder command
+- NsbFailureMonitor.Monitor
+  Endpoint listening for messages from ServiceControl; currently reports 
+  * MessageFailed, published when a message is moved to the error queue
+  * HeartbeatStopped, published when one endpoint seems not to be working
+  * HeartbeatRestored, published when one endpoint comes back alive again
+
+Heartbeat message from an endpoint are sent at predefined (configurable) interval of 10 seconds.
+You can customize this internal by adding a key in appSettings
+
+<configuration>
+  ...
+  <appSettings>
+    ...
+    <add key="heartbeat/interval" value="00:00:40" />
+    ...
+  </appSettings>
+  ...
+</configuration>
+
+You should check HearbeatGracePeriod in ServiceControl settings, since it should be greater than the interval set for endpoints.
